@@ -1,0 +1,332 @@
+.class1{
+color: black;
+font-family:helvetica;
+font-size:15pt;
+} 
+
+.class2{
+color: black;
+font-family: helvetica;
+font-size:25pt;
+text-align: center;
+}
+
+.class3{
+color: black;
+font-family: helvetica;
+font-style: italic
+font-size:35pt;
+}
+
+.class4{
+color: black;
+font-family: inherit;
+font-size: 12pt;
+text-align: center
+}
+
+
+.topnav {
+  position: relative;
+  background-color: #FF1493;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #FFF0F5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #F0F8FF;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+
+
+#divleft{
+ 
+    float: left;
+    text-align: center;
+
+}
+
+#divmiddle{
+    
+    float: none;
+    text-align: center;
+   
+    
+}
+
+#divright{
+    
+    float: right;
+    text-align: center;
+
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+border-color: deeppink;
+}
+
+.container{
+    max-width: 1200px;
+    margin:auto;
+    overflow:auto;
+    background:#FFBCD9;
+    
+}
+
+.gallery{
+    margin: 5px;
+    border: 1px;
+    float:left;
+    width: 230px;
+    background: #FFBCD9;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    padding: 1px;
+    text-align: center;
+    
+}
+
+
+body{
+    margin: 0;
+    background: #FFBCD9;
+}
+
+nav{
+    background:#FFBCD9;
+    width: 80%;
+    overflow: auto;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    float:left;
+}
+
+nav a{
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: #FFBCD9;
+    font font-size: 17px;
+    color: aliceblue;
+    padding: 10px 10px;
+    font-family: serif;
+}
+
+
+.footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color:#FF1493;
+    color:white;
+    text-align: center;
+    font font-size: 77px;
+}
+
+    
+}
